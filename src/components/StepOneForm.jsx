@@ -58,6 +58,13 @@ const StepOneForm = ({
     onChange({ target: { name: 'category', value } });
   };
 
+  const handleNumberOnlyChange = (e) => { 
+    const val = e.target.value; 
+    if (val === '' || /^\d+$/.test(val)) { 
+      onChange(e); 
+    }
+  };
+
   return (
     <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 transition-all duration-300 hover:shadow-2xl">
       <div className="flex justify-between items-center mb-8">
@@ -117,10 +124,10 @@ const StepOneForm = ({
 
         <Input
           label="Mobile Number"
-          type="number"
+          type="text"
           name="mobileNumber"
           value={data.mobileNumber}
-          onChange={onChange}
+          onChange={handleNumberOnlyChange}
           disabled={isLocked}
           required
           error={errors.mobileNumber}
@@ -148,6 +155,7 @@ const StepOneForm = ({
           value={data.area}
           onChange={onChange}
           disabled={isLocked}
+          required
           error={errors.area}
           placeholder="Enter Your Area Name"
         />
@@ -158,20 +166,20 @@ const StepOneForm = ({
           value={data.premiseName}
           onChange={onChange}
           disabled={isLocked}
+          required
           error={errors.premiseName}
           placeholder="e.g. Galaxy Heights"
         />
 
         <div className="md:col-span-2 lg:col-span-3">
           <label className="text-sm font-semibold text-gray-700 block mb-2">
-            Description <span className="text-red-500">*</span>
+            Description
           </label>
           <textarea
             name="description"
             value={data.description}
             onChange={onChange}
             disabled={isLocked}
-            required
             rows="3"
             placeholder="Tell us more about the property..."
             className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all
