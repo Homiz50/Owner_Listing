@@ -127,7 +127,7 @@ const StepTwoForm = ({ data, onChange, errors, className = '' }) => {
 
         <Input label="Unit No"  type="string" name="unitType" value={data.unitType} onChange={onChange}  />
 
-        <Input label="Nearby Landmarks" name="nearby" value={data.nearby} onChange={onChange} />
+        <Input label="Nearby" name="nearby" value={data.nearby} onChange={onChange} />
 
         <Input label="Address" name="address" value={data.address} onChange={onChange} error={errors.address} />
 

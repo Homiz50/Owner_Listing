@@ -12,14 +12,47 @@ const CATEGORY_OPTIONS = [
 ];
 
 const RESIDENTIAL_SUBTYPES = [
-  "Apartment", "Bungalow", "Tenement", "Penthouse", "Weekend Home", 
-  "Rowhouse", "Residential Plot", "PG"
+  "Apartment",
+  "Bungalow",
+  "Tenement",
+  "Penthouse",
+  "Weekend Home",
+  "PG",
+  "Rowhouse",
+  "Residential Plot",
+  "Pre Leased Spaces",
 ];
 
 const COMMERCIAL_SUBTYPES = [
-  "Basement", "Commercial Plot", "Shed", "Co Working Space", "Factory", 
-  "Shop", "Commercial Building", "Godown", "Showroom", "Restaurant", 
-  "Industrial Land", "Commercial Flat", "Office", "Ware House"
+  "Basement",
+  "Commercial Plot",
+  "Shed",
+  "Co Working Space",
+  "Factory",
+  "Shop",
+  "Commercial Building",
+  "Godown",
+  "Showroom",
+  "Restaurant",
+  "Industrial Land",
+  "Commercial Flat",
+  "Office",
+  "Ware House",
+  "Pre Leased Spaces",
+  "Commericial Bunglow",
+  "Land",
+  "Agriculture Land",
+  "PG House",
+  "Hotel",
+  "Gym",
+  "Spa",
+  "Hospital",
+  "Salon",
+  "Petrol Pump",
+  "Cafe",
+  "PreSchool",
+  "Industrial Plot",
+  "Industrial Shed",
 ];
 
 const StepOneForm = ({ 
